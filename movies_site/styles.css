@@ -1,0 +1,149 @@
+h4{
+    position: fixed;
+    width:100%;
+    Z-index:1;
+    top:-11px;
+    bottom:0;
+    left:35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+section.banner{
+    position:fixed;
+    top: 3px;
+    left:5px;
+    margin:4px;
+    padding:4px;
+    z-index: 1;
+}
+
+.flex-container{
+    display: flex;
+    width:80%;
+    max-width: 980px;
+    margin:0 auto;
+}
+.box{
+    flex:1 0 50px;
+}
+.flex-container .box:hover{
+    background-color: #FFFFFF;
+    color:orange;
+    box-sizing: border-box;
+    text-decoration: underline;
+}
+:root{
+    --primary-color:#22254b;
+    --secondary-color:#373b69;
+}
+#bar{
+    display:flex;
+    flex-flow: column;
+    justify-content: space-between;
+    background-color: rgb(146, 154, 155);
+    width:310px;
+    height:83%;
+    margin:15px auto;
+    padding:5px;
+    box-sizing: border-box;
+}
+#bar ul{
+    color:black;
+    line-height: 2.5em;
+    list-style-type: none;
+    margin:0px auto;
+}
+
+.side-bar:hover{
+    color: orange;
+    text-decoration: underline;   
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+}
+#menu{
+    display:flex;
+    flex-flow: row;
+    align-items: flex-start;
+}
+main{
+    display:flex;
+    background-color: rgb(157, 166, 170);
+    margin-bottom:20px;
+    padding:10px;
+    width:1000px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    position: relative;
+    top:16px;
+    left:325px;
+}
+.mvi{
+    width:200px;
+    margin:1rem;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
+    background-color: var(--secondary-color);
+    position: relative;
+    overflow:hidden;
+}
+.mvi img{
+    width:100%;
+}
+.movie-info{
+    color:#eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0.5rem 1rem 1rem;
+    letter-spacing: 0.4px;
+}
+.movie-info h3{
+    margin-top:0px;
+}
+.movie-info span{
+    background-color: var(--primary-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.movie-info span.green{
+    color:lightgreen;
+}
+.movie-info span.orange{
+    color:orange;
+}
+.movie-info span.red{
+    color:red;
+}
+.overview{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: #fff;
+    padding: 1rem;
+    max-height: 100%;
+    transform:translateY(101%);
+    transition:transform 0.3s ease-in;
+}
+.mvi:hover .overview{
+    transform:translateY(0)
+}
+.posters li:hover{
+    position: relative;
+    top:-4px;
+    border:3px solid purple;
+}
+section.add{
+    color: #FFFFFF;
+    background-color: black;
+    margin:0px auto;
+    padding: 0px 30px;
+    border-radius: 36px;
+    position:relative;
+    top: -30px;
+}
+.copyright{
+    position: fixed;
+    top:650px;
+}
